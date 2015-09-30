@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link href="/Css/SiteStyleSheet.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div ng-app="QubeApp">
+       
+            <div ng-include="'/Pages/Login/Login.html'"></div>
+            <div ui-view></div>
+        </div>
+   
+    </body>
+
+</html>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="app.module.js"></script>
+<script src="app.routes.js"></script>
+<script src="Pages/Login/SingIn/SignIn.js"></script>
+<script src="Pages/Login/SignUp/SignUp.js"></script>

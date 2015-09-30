@@ -1,0 +1,143 @@
+﻿body {
+    background-image: -webkit-linear-gradient(left bottom, rgb(45, 39, 217) 10%, rgb(235, 30, 58) 26%, rgb(209, 160, 25) 43%, rgb(237, 216, 26) 61%, rgb(24, 161, 35) 85%, rgb(13, 148, 25) 90%);
+}
+/*background-image: -webkit-linear-gradient(left bottom, rgb(45, 39, 217) 10%, rgb(235, 30, 58) 26%, rgb(209, 160, 25) 43%, rgb(237, 216, 26) 61%, rgb(24, 161, 35) 85%, rgb(13, 148, 25) 90%);*/
+/*background-image: -o-linear-gradient(left bottom, rgb(45, 39, 217) 10%, rgb(235, 30, 58) 26%, rgb(209, 160, 25) 43%, rgb(237, 216, 26) 61%, rgb(24, 161, 35) 85%, rgb(13, 148, 25) 90%);
+background-image: -moz-linear-gradient(left bottom, rgb(45, 39, 217) 10%, rgb(235, 30, 58) 26%, rgb(209, 160, 25) 43%, rgb(237, 216, 26) 61%, rgb(24, 161, 35) 85%, rgb(13, 148, 25) 90%);
+background-image: -webkit-linear-gradient(left bottom, rgb(45, 39, 217) 10%, rgb(235, 30, 58) 26%, rgb(209, 160, 25) 43%, rgb(237, 216, 26) 61%, rgb(24, 161, 35) 85%, rgb(13, 148, 25) 90%);
+background-image: -ms-linear-gradient(left bottom, rgb(45, 39, 217) 10%, rgb(235, 30, 58) 26%, rgb(209, 160, 25) 43%, rgb(237, 216, 26) 61%, rgb(24, 161, 35) 85%, rgb(13, 148, 25) 90%);
+background-image: linear-gradient(to left bottom, rgb(45, 39, 217) 10%, rgb(235, 30, 58) 26%, rgb(209, 160, 25) 43%, rgb(237, 216, 26) 61%, rgb(24, 161, 35) 85%, rgb(13, 148, 25) 90%);*/
+/*}*/
+
+.loginBG {
+    background: #f5f5f5;
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 10em;
+}
+
+.tabs {
+    max-width: 100%;
+    float: none;
+    list-style: none;
+    padding: 0;
+}
+
+    .tabs:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .tabs input[type=radio] {
+        display: none;
+    }
+
+    .tabs label {
+        box-shadow: inset 0 1px darkgray;
+        display: block;
+        float: left;
+        width: 50%;
+        color: white;
+        font-size: 20px;
+        font-weight: normal;
+        text-decoration: none;
+        text-align: center;
+        line-height: 2;
+        cursor: pointer;
+        -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+        transition: all 0.5s;
+        background: #292e32;
+    }
+
+        .tabs label i {
+            margin-right: 0;
+        }
+
+        .tabs label:hover {
+            color: black;
+            background-color: darkgrey;
+        }
+
+.tab-content {
+    display: none;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    padding-top: 2px;
+    color: black;
+}
+
+    .tab-content * {
+        -webkit-animation: scale 0.7s ease-in-out;
+        -moz-animation: scale 0.7s ease-in-out;
+        animation: scale 0.7s ease-in-out;
+    }
+
+@keyframes scale {
+
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.01);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.tabs [id^="tab"]:checked + label {
+    background-color: #f5f5f5;
+    color: black;
+    box-shadow: inset 0 1px darkgray;
+}
+
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2 {
+    display: block;
+}
+
+.textBox {
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 2px solid #fff;
+    height: 50px;
+}
+
+.btnStyle {
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 2px solid #0393f4;
+    background-color: #0393f4;
+    color: white;
+    font: bold;
+    font-size: 1.2em;
+    height: 50px;
+}
+
+.hlpStyle {
+    color: #0393f4;
+    font-size: 1.2em;
+    font: bold;
+}
